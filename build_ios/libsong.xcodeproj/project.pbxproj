@@ -1,0 +1,231 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68B60C3ECBD53E5A86B98AB8 /* SKYSong.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB940AB31F8918CEF460E71A /* SKYSong.mm */; };
+		7CC60A91126AB8B8C36EE6ED /* SKYSong+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3606D67C003028CB517C73C0 /* SKYSong+Private.mm */; };
+		FBE303F7692E9275963D8F31 /* printer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69F407A8A4D7DDF4A9B73340 /* printer.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F8619F633CB1A9D090DB3C4 /* libsong_objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsong_objc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3606D67C003028CB517C73C0 /* SKYSong+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "SKYSong+Private.mm"; sourceTree = "<group>"; };
+		381C6B7E9DDE4DF0F825113D /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = common.gypi; sourceTree = "<group>"; };
+		69F407A8A4D7DDF4A9B73340 /* printer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = printer.cpp; sourceTree = "<group>"; };
+		97C1F7BF6EC885FBC1FDFB76 /* libsong.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = libsong.gyp; sourceTree = "<group>"; };
+		EB940AB31F8918CEF460E71A /* SKYSong.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SKYSong.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6850C41346A278C1C3E3D5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		366CFD39FB4EE74B360202BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F8619F633CB1A9D090DB3C4 /* libsong_objc.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A2B01E93C6E55DA1227F015 /* generated-src/objc */ = {
+			isa = PBXGroup;
+			children = (
+				3606D67C003028CB517C73C0 /* SKYSong+Private.mm */,
+				EB940AB31F8918CEF460E71A /* SKYSong.mm */,
+			);
+			path = "generated-src/objc";
+			sourceTree = "<group>";
+		};
+		4AC519DF134ABB6EFCE0D6C0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B01E93C6E55DA1227F015 /* generated-src/objc */,
+				C1514267E0288A3D6D0B1F20 /* handwritten-src/cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		8A733D9BC748853A7FF9B6EF = {
+			isa = PBXGroup;
+			children = (
+				4AC519DF134ABB6EFCE0D6C0 /* Source */,
+				366CFD39FB4EE74B360202BB /* Products */,
+				979009880DC271427FF8BB00 /* Build */,
+			);
+			sourceTree = "<group>";
+		};
+		979009880DC271427FF8BB00 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				381C6B7E9DDE4DF0F825113D /* common.gypi */,
+				97C1F7BF6EC885FBC1FDFB76 /* libsong.gyp */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+		C1514267E0288A3D6D0B1F20 /* handwritten-src/cpp */ = {
+			isa = PBXGroup;
+			children = (
+				69F407A8A4D7DDF4A9B73340 /* printer.cpp */,
+			);
+			path = "handwritten-src/cpp";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67D69094DC8530F40FAC6892 /* libsong_objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91CD47F20B37B9837D3647AE /* Build configuration list for PBXNativeTarget "libsong_objc" */;
+			buildPhases = (
+				80AFC4F75B4D6AD3AC068C05 /* Sources */,
+				C6850C41346A278C1C3E3D5B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libsong_objc;
+			productName = song_objc;
+			productReference = 0F8619F633CB1A9D090DB3C4 /* libsong_objc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D715E615EAC75F52DF893D7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = B5717F8A070D5E579F6E30F5 /* Build configuration list for PBXProject "libsong" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 8A733D9BC748853A7FF9B6EF;
+			projectDirPath = ..;
+			projectRoot = "";
+			targets = (
+				67D69094DC8530F40FAC6892 /* libsong_objc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80AFC4F75B4D6AD3AC068C05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC60A91126AB8B8C36EE6ED /* SKYSong+Private.mm in Sources */,
+				68B60C3ECBD53E5A86B98AB8 /* SKYSong.mm in Sources */,
+				FBE303F7692E9275963D8F31 /* printer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0EAE8A1DD84554E405CEBF13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+			};
+			name = Debug;
+		};
+		72D9B0471BC9B2710F1AC8AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+			};
+			name = Release;
+		};
+		A5D3585E08E5B9A206F9B92E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"generated-src/objc",
+					"generated-src/cpp",
+					"handwritten-src/objc",
+					"handwritten-src/cpp",
+					"deps/djinni/support-lib/objc",
+				);
+				OTHER_CFLAGS = "-Wall";
+				OTHER_CPLUSPLUSFLAGS = "-Wall";
+				PRODUCT_NAME = song_objc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+		E245258E4C59047FD4A03420 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEAD_CODE_STRIPPING = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"generated-src/objc",
+					"generated-src/cpp",
+					"handwritten-src/objc",
+					"handwritten-src/cpp",
+					"deps/djinni/support-lib/objc",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-Wall";
+				OTHER_CPLUSPLUSFLAGS = "-Wall";
+				PRODUCT_NAME = song_objc;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91CD47F20B37B9837D3647AE /* Build configuration list for PBXNativeTarget "libsong_objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E245258E4C59047FD4A03420 /* Debug */,
+				A5D3585E08E5B9A206F9B92E /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+		B5717F8A070D5E579F6E30F5 /* Build configuration list for PBXProject "libsong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EAE8A1DD84554E405CEBF13 /* Debug */,
+				72D9B0471BC9B2710F1AC8AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D715E615EAC75F52DF893D7D /* Project object */;
+}

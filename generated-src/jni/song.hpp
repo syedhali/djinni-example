@@ -24,7 +24,7 @@ private:
     NativeSong();
     friend ::djinni::JniClass<NativeSong>;
 
-    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/skycatch/jnigenpackage/Song") };
+    const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/skycatch/jinni/Song") };
     const jmethodID jconstructor { ::djinni::jniGetMethodID(clazz.get(), "<init>", "(Ljava/lang/String;Ljava/lang/String;)V") };
     const jfieldID field_title { ::djinni::jniGetFieldID(clazz.get(), "title", "Ljava/lang/String;") };
     const jfieldID field_artist { ::djinni::jniGetFieldID(clazz.get(), "artist", "Ljava/lang/String;") };

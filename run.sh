@@ -4,11 +4,11 @@ in="$base_dir/song.djinni"
 cpp_out="$base_dir/generated-src/cpp"
 jni_out="$base_dir/generated-src/jni"
 objc_out="$base_dir/generated-src/objc"
-java_out="$base_dir/generated-src/java"
+java_out="$base_dir/generated-src/java/com/skycatch/jinni"
 
 deps/djinni/src/run \
    --java-out "$java_out" \
-   --java-package com.skycatch.jnigenpackage \
+   --java-package "com.skycatch.jinni" \
    --java-cpp-exception SkyException \
    \
    --cpp-out "$cpp_out" \
