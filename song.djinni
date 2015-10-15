@@ -1,0 +1,4 @@
+song = record {
+	title: string;
+	artist: string;
+}
